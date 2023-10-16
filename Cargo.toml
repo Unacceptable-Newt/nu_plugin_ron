@@ -1,0 +1,20 @@
+[package]
+name = "nu_plugin_ron"
+version = "0.0.2"
+authors = ["Darren Schroeder"]
+edition = "2021"
+repository = "https://github.com/fdncred/nu_plugin_ron"
+description = "a nushell plugin called ron"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# for local development, you can use a path dependency
+# nu-plugin = { path = "../nushell/crates/nu-plugin", version = "0.75.1"}
+# nu-protocol = { path = "../nushell/crates/nu-protocol", version="0.75.1"}
+nu-plugin = "0.85.0"
+nu-protocol = "0.85.0"
+ron = "0.8"
+serde = { version = "1", features = ["derive"] }
+
